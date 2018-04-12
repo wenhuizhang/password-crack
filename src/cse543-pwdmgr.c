@@ -202,6 +202,7 @@ int make_key_from_master(char *master, unsigned char **enc_key, unsigned char **
      such that no one who does not know the master password could guess 
      the keys. */
 
+#ifdef TEST0
   /*init for srand for a fixed rand*/
   srand(1);
 
@@ -219,6 +220,9 @@ int make_key_from_master(char *master, unsigned char **enc_key, unsigned char **
     free(master_sand_0);
     free(master_sand_1);
   }
+#endif
+
+
   return 0;
 } 
 
