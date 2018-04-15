@@ -1,0 +1,87 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AR	Makefile	/^AR=ar rc$/;"	m
+BASENAME	Makefile	/^BASENAME=p1$/;"	m
+CC	Makefile	/^CC=gcc $/;"	m
+CFLAGS	Makefile	/^CFLAGS=-c $(INCLUDES) -g -Wall $/;"	m
+COMPILER	gpw-test/Makefile	/^COMPILER = g++$/;"	m
+DEBUGARGS	gpw-test/Makefile	/^DEBUGARGS = -g$/;"	m
+DICT	gpw-test/Makefile	/^DICT = \/usr\/share\/dict\/words$/;"	m
+ENC_KEY_LEN	cse543-pwdmgr.c	20;"	d	file:
+HASH_H_INCLUDED	hash.h	8;"	d
+HASH_SUPPORTS_DELETE	hash.h	10;"	d
+HashTable	hash.h	/^}HashTable;$/;"	t	typeref:struct:HashTables
+HashTableElement	hash.h	/^typedef struct HashTableElement$/;"	s
+HashTable_Element	hash.h	/^}HashTable_Element;$/;"	t	typeref:struct:HashTableElement
+HashTables	hash.h	/^typedef struct  HashTables$/;"	s
+KEYSIZE	cse543-kvs.h	5;"	d
+KVS_BUCKETS	cse543-kvs.h	2;"	d
+LDFLAGS	Makefile	/^LDFLAGS=$(LIBDIRS)$/;"	m
+LIBS	Makefile	/^LIBS=-lcrypto -lm$/;"	m
+LINK	Makefile	/^LINK=gcc -g$/;"	m
+MASTER_PASSWD_LEN	cse543-pwdmgr.c	21;"	d	file:
+MAX_DOMAIN	cse543-pwdmgr.c	23;"	d	file:
+MAX_LENGTH	cse543-cracker.c	15;"	d	file:
+MAX_PASSWD	cse543-pwdmgr.c	24;"	d	file:
+MIN_GUESS_NUMBER	cse543-pwdmgr.c	22;"	d	file:
+N_CHARS	cse543-cracker.c	16;"	d	file:
+RANLIB	Makefile	/^RANLIB=ranlib$/;"	m
+SEPARATOR_CHAR	cse543-pwdmgr.c	25;"	d	file:
+TAGSIZE	cse543-kvs.h	4;"	d
+TARGETS	Makefile	/^TARGETS=cse543-p1$/;"	m
+VALSIZE	cse543-kvs.h	3;"	d
+authval	cse543-kvs.h	/^struct authval {$/;"	s
+av	cse543-kvs.h	/^  struct authval *av;$/;"	m	struct:kvpair	typeref:struct:kvpair::authval
+buffer_from_file	cse543-util.c	/^int buffer_from_file(char *filepath, unsigned char **buf)$/;"	f
+compute_hmac_key	cse543-pwdmgr.c	/^int compute_hmac_key( char *input, size_t len, unsigned char **hmac, size_t *hlen, $/;"	f
+decrypt	cse543-ssl.c	/^int decrypt(unsigned char *ciphertext, int ciphertext_len, unsigned char *aad,$/;"	f
+digest_message	cse543-ssl.c	/^void digest_message(const unsigned char *message, size_t message_len, unsigned char **digest, unsigned int *digest_len)$/;"	f
+duos	gpw-test/loadtris.c	/^int duos[26][26];				\/* Bigraph frequencies *\/$/;"	v
+duos	gpw-test/trigram.h	/^const short duos[26][26] = {$/;"	v
+encrypt	cse543-ssl.c	/^int encrypt(unsigned char *plaintext, int plaintext_len, unsigned char *aad,$/;"	f
+entry	cse543-kvs.h	/^  struct kvpair *entry;$/;"	m	struct:kv_list_entry	typeref:struct:kv_list_entry::kvpair
+fp	gpw-test/loadtris.c	/^FILE *fp;$/;"	v
+get_markov_guess_number	cse543-cracker.c	/^double get_markov_guess_number( char *passwd, unsigned int pwdlen, char *crack_file )$/;"	f
+handleErrors	cse543-ssl.c	/^void handleErrors(void)$/;"	f
+hmac_message	cse543-ssl.c	/^int hmac_message(unsigned char* msg, size_t mlen, unsigned char** val, size_t* vlen, unsigned char *key)$/;"	f
+key	cse543-kvs.h	/^  unsigned char key[KEYSIZE];$/;"	m	struct:kvpair
+kv_list_entry	cse543-kvs.h	/^struct kv_list_entry {$/;"	s
+kvpair	cse543-kvs.h	/^struct kvpair {$/;"	s
+kvs	cse543-kvs.c	/^struct kv_list_entry *kvs[KVS_BUCKETS]; $/;"	v	typeref:struct:kv_list_entry
+kvs_auth_get	cse543-kvs.c	/^int kvs_auth_get(unsigned char *key, unsigned char **val, unsigned char **tag)$/;"	f
+kvs_auth_set	cse543-kvs.c	/^int kvs_auth_set(unsigned char *key, unsigned char *val, unsigned char *tag)$/;"	f
+kvs_dump	cse543-pwdmgr.c	/^int kvs_dump(FILE *fptr, unsigned char *enc_key)$/;"	f
+kvs_init	cse543-kvs.c	/^int kvs_init( char *filepath )$/;"	f
+kvs_match	cse543-kvs.c	/^struct kv_list_entry *kvs_match( unsigned char *key )$/;"	f
+lookup_password	cse543-pwdmgr.c	/^size_t lookup_password( char *domain, size_t dlen, unsigned char **passwd, unsigned char *enc_key, $/;"	f
+m1	gpw-test/loadtris.c	/^int m1, m2, m3;					\/* coords of largest count *\/$/;"	v
+m2	gpw-test/loadtris.c	/^int m1, m2, m3;					\/* coords of largest count *\/$/;"	v
+m3	gpw-test/loadtris.c	/^int m1, m2, m3;					\/* coords of largest count *\/$/;"	v
+main	cse543-pwdmgr.c	/^int main(int argc, char *argv[])$/;"	f
+main	gpw-test/gpw.c	/^int main (int argc, char ** argv) {$/;"	f
+main	gpw-test/loadtris.c	/^int main (int argc, char ** argv) {$/;"	f
+make_key_from_master	cse543-pwdmgr.c	/^int make_key_from_master(char *master, unsigned char **enc_key, unsigned char **hmac_key)$/;"	f
+max	gpw-test/loadtris.c	/^long max = 0;					\/* largest triraph count *\/$/;"	v
+maxcell	gpw-test/trigram.h	/^const short maxcell = 10971; \/* ess *\/$/;"	v
+nBuckets	hash.h	/^	unsigned nBuckets;$/;"	m	struct:HashTables
+next	cse543-kvs.h	/^  struct kv_list_entry *next;$/;"	m	struct:kv_list_entry	typeref:struct:kv_list_entry::kv_list_entry
+obtain_strong_password	cse543-pwdmgr.c	/^int obtain_strong_password(char *orig_passwd, char* crack_file, char **passwd, $/;"	f
+pData	hash.h	/^	char *pData;$/;"	m	struct:HashTableElement
+pNext	hash.h	/^	struct HashTableElement *pNext;$/;"	m	struct:HashTableElement	typeref:struct:HashTableElement::HashTableElement
+pPrev	hash.h	/^	struct HashTableElement *pPrev;$/;"	m	struct:HashTableElement	typeref:struct:HashTableElement::HashTableElement
+ppChain	hash.h	/^	struct HashTableElement **ppChain;$/;"	m	struct:HashTables	typeref:struct:HashTables::HashTableElement
+sigma	gpw-test/loadtris.c	/^long sigma = 0;					\/* Total letters *\/$/;"	v
+sigma	gpw-test/trigram.h	/^const long sigma = 1785501;$/;"	v
+sing	gpw-test/loadtris.c	/^int sing[26];					\/* Letter frequencies *\/$/;"	v
+sing	gpw-test/trigram.h	/^const short sing[26] = {199554, 40433, 103440, 68191, 235331, 24165, 47094, 64356, 201032, 3167, 16158, 130463, 70680, 158743, 170692, 78163, 3734, 160985, 139542, 152831, 87353, 20177, 13864, 6932, 51681, 8460};$/;"	v
+tag	cse543-kvs.h	/^  unsigned char tag[TAGSIZE]; $/;"	m	struct:authval
+tris	gpw-test/loadtris.c	/^int tris[26][26][26];			\/* Trigraph frequencies *\/$/;"	v
+tris	gpw-test/trigram.h	/^const short tris[26][26][26] = {$/;"	v
+uCount	hash.h	/^	unsigned uCount;$/;"	m	struct:HashTables
+uDatumSize	hash.h	/^	unsigned uDatumSize;$/;"	m	struct:HashTables
+upload_password	cse543-pwdmgr.c	/^int upload_password( char *domain, size_t dlen, char *passwd, size_t plen, $/;"	f
+value	cse543-kvs.h	/^  unsigned char value[VALSIZE];$/;"	m	struct:authval

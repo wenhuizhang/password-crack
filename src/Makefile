@@ -22,7 +22,7 @@ RANLIB=ranlib
 #
 # Setup builds
 
-TARGETS=cse543-p1
+TARGETS=cse543-p1 guessNum
 LIBS=-lcrypto -lm
 
 #
@@ -33,6 +33,9 @@ p1 : $(TARGETS)
 cse543-p1 : cse543-pwdmgr.o cse543-kvs.o cse543-cracker.o cse543-ssl.o cse543-util.o
 	$(LINK) $(LDFLAGS) cse543-pwdmgr.o cse543-kvs.o cse543-cracker.o cse543-ssl.o cse543-util.o $(LIBS) -o $@
 
+guessNum : guess_num.o cse543-kvs.o cse543-cracker.o cse543-ssl.o cse543-util.o
+	$(LINK) $(LDFLAGS) guess_num.o cse543-kvs.o cse543-cracker.o cse543-ssl.o cse543-util.o $(LIBS) -o $@
+
 clean:
 	rm -f *.o *~ $(TARGETS)
 
@@ -41,6 +44,7 @@ tar:
 	tar cvfz $(BASENAME).tgz -C ..\
 	    $(BASENAME)/Makefile \
             $(BASENAME)/cse543-pwdmgr.c \
+            $(BASENAME)/guess_num.c \
             $(BASENAME)/cse543-cracker.c \
             $(BASENAME)/cse543-cracker.h \
 	    $(BASENAME)/cse543-kvs.c \
