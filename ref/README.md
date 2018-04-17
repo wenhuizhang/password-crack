@@ -1,3 +1,5 @@
+#Paper List
+
 
 1. Zhang, J., Luo, X., Akkaladevi, S., & Ziegelmayer, J. (2009). Improving multiple-password recall: an empirical study. European Journal of Information Systems, 18(2), 165-176.
 
@@ -9,4 +11,16 @@
 
 5. Alena  Naiakshina,  Anastasia  Danilova,  Christian  Tiefenau,  Marco  Her-zog,  Sergej  Dechand,  and  Matthew  Smith.Why  do  developers  getpassword storage wrong?: A qualitative usability study.  InProceedingsof the 2017 ACM SIGSAC Conference on Computer and CommunicationsSecurity, CCS ’17, pages 311–328, New York, NY, USA, 2017. ACM.
 
-6. 
+6. S. Houshmand and S. Aggarwal. Building better passwords using probabilistic techniques. In Proceedings
+of the 28th Annual Computer Security Applications Conference, ACSAC ’12, pages 109–118.
+ACM, 2012.
+
+
+7. P. Kelley, S. Komanduri, M. Mazurek, R. Shay, T. Vidas, L. Bauer, N. Christin, L. Cranor, and J. Lopez.
+Guess again (and again and again): Measuring password strength by simulating password-cracking
+algorithms. In Proceedings of the 2012 IEEE Symposium on Security and Privacy, Oakland ’12, pages
+523–537. IEEE Computer Society, 2012.
+
+
+8. D. Schmidt and T. Jaeger. Pitfalls in the automated strengthening of passwords. In Proceedings of the
+29th Annual Computer Security Applications Conference, ACSAC ’13, pages 129–138. ACM, 2013.
